@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background-color: #F0F2F5;
+    width: 100%;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/*----------------------task-bar---------------------------*/
+#task-bar{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0 1rem;
+    display: flex;
+    box-shadow: 0 1px 3px #DDDFE2;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+#task-bar .left {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+#task-bar .left > img {
+    width: 40px;
+    height: 40px;
+}
+#task-bar .left > i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 0 0 50%;
+    background-color: #F0F2F5;
+    font-size: 18px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+    color: #65676B;
+}
+#task-bar .left label > input {
+    width: 200px;
+    height: 40px;
+    border-radius: 0 25px 25px 0;
+    background-color: #F0F2F5;
+    border: none;
+    outline: none;
+    color: #65676B;
+    cursor: pointer;
+}
+#task-bar .middle {
+    position: relative;
+    top: 0;
+    left: 5%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+#task-bar .middle a {
+    color: #6D6F73;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+#task-bar .middle a.middle-link {
+    position: relative;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+#task-bar .middle a.middle-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #1877f2; /* Màu sắc của đường gạch chân, có thể điều chỉnh tùy ý */
+    transition: height 0.3s ease; /* Hiệu ứng chuyển động */
+}
+#task-bar .middle a.middle-link:focus {
+    color: #1877f2; /* Màu sắc của chữ khi được chọn */
+}
+#task-bar .middle a.middle-link:focus::after {
+    height: 2px;
+}
+#task-bar .middle a:not(:focus):hover{
+    background-color: #F0F2F5;
+    border-radius: 10px;
+    border: none;
+}
+#task-bar .middle a > i {
+    font-size: 25px;
+    padding: 0 25px;
+}
+#task-bar .right {
+    position: relative;
+    top: 0;
+    left: 19%;
+    display: flex;
+    align-items: center;
+}
+#task-bar .right a {
+    width: 40px;
+    height: 40px;
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #F0F2F5;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+#task-bar .right .profile {
+    background: url("./images/avatar.jpg");
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+/*----------------------main---------------------------*/
+#main {
+    position: relative;
+    top: 60px;
+}
+#main #sidebar {
+    width: 25%;
+    height: 100vh;
+    float: left;
+}
+#main #sidebar a{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+}
+#main #sidebar a:hover{
+    background-color: #F0F2F5;
+    border-radius: 10px;
+}
+#main #sidebar .function {
+    width: 100%;
+    position: relative;
+}
+#main #sidebar .function::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%; /* Chiều rộng của box-shadow */
+    height: 3px; /* Chiều cao của box-shadow */
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+#main #sidebar img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+#main #sidebar .shortcuts{
+    width: 100%;
+    position: relative;
+}
+#main #content {
+    float: left;
+    width: 50%;
+    height: 100vh;
+}
+#main #content .story {
+    width: 90%;
+    height: 40%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    border-radius: 25px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main #content .story .video {
+    width: 20%;
+    height: 90%;
+    border-radius: 25px;
+    background-color: #9d9898;
+    margin: 5px;
+}
+#main #content .posts {
+    position: relative;
+    top: 10%;
+}
+#main #content .posts .child-post {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    height: 550px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    background-color: #6D6F73;
+}
+#main #contact {
+    float: right;
+    width: 25%;
+    position: relative;
+    top: 5%;
+}
+#main #contact .advertisement {
+    top: 10%;
+    position: relative;
+    width: 100%;
+    height: 40%;
+}
+#main #contact .advertisement .ads {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 10px 10px 10px 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#main #contact .advertisement .ads img {
+    width: 100px;
+    height: 100px;
+    background-color: #6D6F73;
+    border-radius: 20px;
+}
+#main #contact .advertisement .ads > span {
+    display: flex;
+    margin-left: 10px;
+}
+#main #contact .list-friends {
+    position: relative;
+    top: 10px;
+    width: 100%;
+}
+#main #contact .list-friends .friend {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 10px 10px 20px;
+}
+#main #contact .list-friends .friend img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#main #contact .list-friends .friend span{
+    margin-left: 10px;
+}

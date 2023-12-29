@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, serif;
+}
+.menu {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    border: 1px solid #CDCDCD;
+}
+.menu, .menu ul, .menu li {
+    padding: 0;
+    margin: 0;
+}
+.menu ul {
+    display: flex;
+}
+.menu li{
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    width: 100px;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+}
+.menu ul ul {
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 10px;
+    background-color: black;
+    visibility: hidden;
+}
+.menu ul ul li {
+    width: 200px;
+}
+.menu ul ul li a {
+    text-align: left;
+    padding-left: 10px;
+}
+.menu li:hover {
+    background-color: red;
+}
+.menu li:hover>ul {
+    visibility: visible;
+}
