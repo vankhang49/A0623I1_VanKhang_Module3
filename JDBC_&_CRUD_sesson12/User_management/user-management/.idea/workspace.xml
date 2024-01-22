@@ -5,17 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdb7b0fe-f830-43f5-9091-883026204d40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanagement/controller/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanagement/repository/repositoryImpl/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanagement/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanagement/service/serviceImpl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/commit-rollback-test/src/main/java/com/example/commitrollbacktest/ViduJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/.idea/user.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/repository/repositoryImpl/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/service/serviceImpl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/User_management.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/usermanagement/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanagement/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/usermanagement/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanagement/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../user-manager/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../user-manager/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../user-manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../user-manager/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../mvc_sesson11/product-management/src/main/webapp/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../mvc_sesson11/product-management/src/main/webapp/product/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../mvc_sesson11/product-management/src/main/webapp/product/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../mvc_sesson11/product-management/src/main/webapp/product/update.jsp" afterDir="false" />
     </list>
@@ -36,6 +51,7 @@
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -57,20 +73,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;H:/module3/mvc_sesson11/product-management&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "H:/module3/mvc_sesson11/product-management",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.84">
     <configuration name="UserRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.usermanagement.repository.repositoryImpl.UserRepository" />
@@ -193,6 +210,8 @@
       <workItem from="1705393369767" duration="1975000" />
       <workItem from="1705488867827" duration="7588000" />
       <workItem from="1705652857848" duration="380000" />
+      <workItem from="1705885990403" duration="732000" />
+      <workItem from="1705896159248" duration="2993000" />
     </task>
     <servers />
   </component>

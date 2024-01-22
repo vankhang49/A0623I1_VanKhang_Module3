@@ -1,0 +1,17 @@
+body{
+    background: rgba(3, 3, 3, 0.7);
+    color: white;
+}
+.add {
+    width: 300px;
+    height: 50px;
+    background: #042ef6;
+    border-radius: 20px;
+}
+.add > a {
+    color: #fff;
+    text-decoration: none;
+}
+.add:hover {
+    background: #3654fa;
+}

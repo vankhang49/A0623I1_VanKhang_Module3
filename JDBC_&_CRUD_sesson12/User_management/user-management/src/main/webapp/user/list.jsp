@@ -13,11 +13,12 @@
     <title>User Management Application</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
-<body>
+<body class="container">
 <center>
     <h1>User Management</h1>
-    <h2>
+    <h2 class="add">
         <a href="/users?action=create">Add New User</a>
     </h2>
 </center>
@@ -26,14 +27,15 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="country">
         <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
-    <table border="1" cellpadding="5">
-        <caption><h2>List of Users</h2></caption>
+    <caption><h2>List of Users</h2></caption>
+    <table border="1" cellpadding="5" width="70%" class="table table-dark table-striped">
         <tr>
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
             <th>Country</th>
-            <th>Actions</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
         <c:forEach var="user" items="${listUser}">
             <tr>
@@ -42,8 +44,11 @@
                 <td><c:out value="${user.email}"/></td>
                 <td><c:out value="${user.country}"/></td>
                 <td>
-                    <a href="/users?action=edit&id=${user.id}">Edit</a>
-                    <a href="/users?action=delete&id=${user.id}">Delete</a>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='/users?action=edit&id=${user.id}'">
+                        Edit
+                    </button>
+                </td>
+                <td>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" onclick="deleteModal(${user.id})" data-bs-target="#exampleModal">
                         Delete
