@@ -27,11 +27,16 @@
         <input class="form-control" type="number" name="price" value="${product.price}">
         <label>Ảnh sản phẩm</label>
         <input class="form-control" type="file" name="images" value="${product.image}">
-        <button type="submit" class="btn btn-primary">Create</button>
+        <button type="submit" class="btn btn-primary" onclick="updateElement()">Update</button>
     </form>
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+<script>
+    function updateElement(){
+        confirm("Are you sure?");
+    }
+</script>
 </html>

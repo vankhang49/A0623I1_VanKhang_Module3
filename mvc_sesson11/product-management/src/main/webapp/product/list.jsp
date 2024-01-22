@@ -43,7 +43,7 @@
                             class="btn btn-warning">Chi tiết</button></td>
                 <td><button onclick="window.location.href='/products?action=update&id=${product.id}'"
                             class="btn btn-warning">Cập nhật</button></td>
-                <td><button onclick="window.location.href='/products?action=delete&id=${product.id}'"
+                <td><button onclick="window.location.href='/products?action=delete&id=${product.id}'" id="removeElement"
                             class="btn btn-warning">Xoá</button></td>
             </tr>
         </c:forEach>
@@ -53,6 +53,10 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
+<script>
+    document.getElementById("removeElement").addEventListener("click", function (){
+        confirm("Are you sure?");
+    })
+</script>
 </body>
 </html>

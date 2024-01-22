@@ -1,6 +1,6 @@
-package com.example.usermanagement.service;
+package com.example.usermanager.service;
 
-import com.example.usermanagement.model.User;
+import com.example.usermanager.model.User;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -16,4 +16,9 @@ public interface IUserService {
 
     public boolean updateUser(User user);
     List<User> findByCountry(String country);
+    User getUserById(int id);
+    void insertUserStore(User user);
+    void addUserTransaction(User user);
+    List<User> selectAllUserByCallable();
+    boolean updateUserByCallable(User user);
 }

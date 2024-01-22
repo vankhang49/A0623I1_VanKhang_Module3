@@ -1,10 +1,10 @@
-package com.example.usermanagement.controller;
+package com.example.usermanager.controller;
 
-import com.example.usermanagement.model.User;
-import com.example.usermanagement.repository.IUserRepository;
-import com.example.usermanagement.repository.repositoryImpl.UserRepository;
-import com.example.usermanagement.service.IUserService;
-import com.example.usermanagement.service.serviceImpl.UserService;
+import com.example.usermanager.model.User;
+import com.example.usermanager.repository.IUserRepository;
+import com.example.usermanager.repository.repositoryImpl.UserRepository;
+import com.example.usermanager.service.IUserService;
+import com.example.usermanager.service.serviceImpl.UserService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -81,6 +81,9 @@ public class UserServlet extends HttpServlet {
                 case "delete":
                     deleteUser(request, response);
                     break;
+                case "transaction":
+                    addUserTransaction(request, response);
+                    break;
                 default:
                     listUser(request, response);
                     break;
@@ -92,7 +95,8 @@ public class UserServlet extends HttpServlet {
 
     private void listUser(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
-        List<User> listUser = userService.selectAllUsers();
+        List<User> listUser = userService.selectAllUserByCallable();
+//        List<User> listUser = userService.selectAllUsers();
         request.setAttribute("listUser", listUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
         dispatcher.forward(request, response);
@@ -107,7 +111,8 @@ public class UserServlet extends HttpServlet {
     private void showEditForm(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
-        User existingUser = userService.selectUser(id);
+//        User existingUser = userService.selectUser(id);
+        User existingUser = userService.getUserById(id);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/edit.jsp");
         request.setAttribute("user", existingUser);
         dispatcher.forward(request, response);
@@ -120,7 +125,8 @@ public class UserServlet extends HttpServlet {
         String email = request.getParameter("email");
         String country = request.getParameter("country");
         User newUser = new User(name, email, country);
-        userService.insertUser(newUser);
+//        userService.insertUser(newUser);
+        userService.insertUserStore(newUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/create.jsp");
         dispatcher.forward(request, response);
     }
@@ -132,8 +138,9 @@ public class UserServlet extends HttpServlet {
         String email = request.getParameter("email");
         String country = request.getParameter("country");
 
-        User book = new User(id, name, email, country);
-        userService.updateUser(book);
+        User user = new User(id, name, email, country);
+//        userService.updateUser(user);
+        userService.updateUserByCallable(user);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/edit.jsp");
         dispatcher.forward(request, response);
     }
@@ -148,5 +155,8 @@ public class UserServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
         dispatcher.forward(request, response);
     }
-
+    private void addUserTransaction(HttpServletRequest request, HttpServletResponse response) {
+        User user = new User("quan", "quan.nguyen@codegym.vn", "vn");
+        userService.addUserTransaction(user);
+    }
 }

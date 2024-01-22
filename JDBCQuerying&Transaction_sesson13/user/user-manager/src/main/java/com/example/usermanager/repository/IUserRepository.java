@@ -1,6 +1,6 @@
-package com.example.usermanagement.repository;
+package com.example.usermanager.repository;
 
-import com.example.usermanagement.model.User;
+import com.example.usermanager.model.User;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -16,4 +16,9 @@ public interface IUserRepository {
 
     boolean updateUser(User user) throws SQLException;
     List<User> findByCountry(String fCountry);
+    User getUserById(int id);
+    void insertUserStore(User user);
+    void addUserTransaction(User user);
+    List<User> selectAllUserByCallable();
+    boolean updateUserByCallable(User user);
 }

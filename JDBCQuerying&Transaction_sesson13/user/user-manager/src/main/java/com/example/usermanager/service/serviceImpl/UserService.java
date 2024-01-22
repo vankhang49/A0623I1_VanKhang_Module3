@@ -1,9 +1,9 @@
-package com.example.usermanagement.service.serviceImpl;
+package com.example.usermanager.service.serviceImpl;
 
-import com.example.usermanagement.model.User;
-import com.example.usermanagement.repository.IUserRepository;
-import com.example.usermanagement.repository.repositoryImpl.UserRepository;
-import com.example.usermanagement.service.IUserService;
+import com.example.usermanager.model.User;
+import com.example.usermanager.repository.IUserRepository;
+import com.example.usermanager.repository.repositoryImpl.UserRepository;
+import com.example.usermanager.service.IUserService;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -49,5 +49,30 @@ public class UserService implements IUserService {
     @Override
     public List<User> findByCountry(String country) {
         return userRepository.findByCountry(country);
+    }
+
+    @Override
+    public User getUserById(int id) {
+        return userRepository.getUserById(id);
+    }
+
+    @Override
+    public void insertUserStore(User user) {
+        userRepository.insertUserStore(user);
+    }
+
+    @Override
+    public void addUserTransaction(User user) {
+        userRepository.addUserTransaction(user);
+    }
+
+    @Override
+    public List<User> selectAllUserByCallable() {
+        return userRepository.selectAllUserByCallable();
+    }
+
+    @Override
+    public boolean updateUserByCallable(User user) {
+        return userRepository.updateUserByCallable(user);
     }
 }

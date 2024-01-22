@@ -1,4 +1,4 @@
-package com.example.usermanagement.model;
+package com.example.usermanager.model;
 
 public class User {
     protected int id;

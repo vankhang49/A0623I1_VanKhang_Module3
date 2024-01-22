@@ -5,7 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93151909-d91a-4ebf-a96a-b9e7335882fc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../web-application_sesson9/login-form/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../web-application_sesson9/login-form/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/commit-rollback-test/src/main/java/com/example/commitrollbacktest/ViduJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/.idea/user.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/repository/repositoryImpl/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/java/com/example/usermanager/service/serviceImpl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBCQuerying&amp;Transaction_sesson13/user/user-manager/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../User_management/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../User_management/.idea/User_management.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../User_management/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../User_management/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../User_management/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../User_management/user-management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../User_management/user-management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mvc_sesson11/product-management/src/main/webapp/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../mvc_sesson11/product-management/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mvc_sesson11/product-management/src/main/webapp/product/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../mvc_sesson11/product-management/src/main/webapp/product/update.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,29 +41,43 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2b1q6g6BVBZTzEskSkG9mEDRqn1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;H:/module3/JDBC_&amp;_CRUD_sesson12/User_management&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.84" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.84" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -72,6 +110,9 @@
       <option name="presentableId" value="Default" />
       <updated>1705392760683</updated>
       <workItem from="1705392761677" duration="606000" />
+      <workItem from="1705888097811" duration="43000" />
+      <workItem from="1705890561014" duration="13000" />
+      <workItem from="1705896034962" duration="12000" />
     </task>
     <servers />
   </component>
